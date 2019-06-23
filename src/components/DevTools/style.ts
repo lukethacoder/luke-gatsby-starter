@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import { colors } from "../../styles/variables"
 
 export const StyledDevTools = styled.div`
 	position: absolute;
@@ -6,7 +7,7 @@ export const StyledDevTools = styled.div`
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: peru;
+	background-color: ${colors.brand.primary};
 	opacity: 0;
 	z-index: -1;
 	transition: all 0.3s ease;
