@@ -1,6 +1,6 @@
 # Luke Gatsby Starter
 
-Kick off your project with this opinionated boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. This starter was inspired by the [ueno-gatsby-starter](https://github.com/ueno-llc/ueno-gatsby-starter)
+Kick off your project with this opinionated boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. This starter was inspired by [ueno-gatsby-starter](https://github.com/ueno-llc/ueno-gatsby-starter)
 
 ## Installation
 
@@ -69,19 +69,6 @@ export const Header = () => (
 Dev mode is enabled by clicking `ctrl + ,`;
 
 > make sure you have an `.env` file with `NODE_ENV` set to `development`
-
-Usage:
-
-```tsx
-import React from "react"
-import Logo from "assets/svg/logo.svg"
-
-export const Header = () => (
-	<header>
-		<Logo style={{ fill: "peru" }} />
-	</header>
-)
-```
 
 ## TODO
 
