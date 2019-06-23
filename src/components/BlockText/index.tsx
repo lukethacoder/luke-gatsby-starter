@@ -24,7 +24,7 @@ export const BlockText = ({ heading, description }: IBlockTextProps) => (
 	</Container>
 )
 
-const BlockTextContainer = styled.p`
+const BlockTextContainer = styled.div`
 	max-width: 50%;
 	padding: 96px 0;
 	h3 {
