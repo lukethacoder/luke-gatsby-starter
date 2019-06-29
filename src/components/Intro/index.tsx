@@ -27,7 +27,7 @@ export const Intro = ({ children }: IIntroProps) => {
 
 const StyledIntro = styled.div`
 	font-size: ${rem(36)}rem;
-	padding: 136px 0;
+	padding: 18vh 0;
 	border-bottom: 1px solid ${colors.grey.light};
 	.intro__wrapper {
 		max-width: 56%;

@@ -1,8 +1,7 @@
 import * as React from "react"
-import styled from "@emotion/styled"
 
 import { Container } from "../Container"
-import { widths, colors } from "../../styles/variables"
+import { StyledFooter } from "./style"
 
 interface ISocial {
 	icon: React.ReactNode
@@ -17,8 +16,9 @@ interface IFooterProps {
 export const Footer = ({ logo, social }: IFooterProps) => (
 	<StyledFooter>
 		<Container>
-			<div className="fooer__wrapper">
+			<div className="footer__wrapper">
 				<a
+					className="footer__logo"
 					href="https://lukesecomb.digital"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -42,29 +42,3 @@ export const Footer = ({ logo, social }: IFooterProps) => (
 		</Container>
 	</StyledFooter>
 )
-
-const StyledFooter = styled.footer`
-	max-width: ${widths.lg};
-	margin: 0 auto;
-	bottom: 0;
-	position: absolute;
-	width: 100%;
-	.fooer__wrapper {
-		display: flex;
-		justify-content: space-between;
-		ul {
-			display: flex;
-			list-style: none;
-			padding: 0;
-			li {
-				margin-left: 24px;
-				a {
-					color: ${colors.grey.base};
-					&:hover {
-						color: ${colors.brand.primary};
-					}
-				}
-			}
-		}
-	}
-`

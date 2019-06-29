@@ -28,7 +28,7 @@ export default `
     overflow-y: scroll;
     font-family: ${fonts.sans_serif};
     color: ${colors.black};
-    background-color: ${colors.white};
+    background-color: ${colors.gradientStart};
     background: ${colors.gradientStart}; /* Old browsers */
     background: -moz-linear-gradient(-45deg, ${colors.gradientStart} 0%, ${
 	colors.gradientEnd
@@ -46,6 +46,10 @@ export default `
 }',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+  }
+
+  #___gatsby {
+    height: 100%;
   }
 
   a {
