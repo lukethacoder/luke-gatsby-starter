@@ -4,7 +4,8 @@ import styled from "@emotion/styled"
 import { Container } from "../Container"
 import { Row } from "../Row"
 import { Main } from "./style"
-import { fonts } from "../../styles/variables"
+import { fonts, breakpoints } from "../../styles/variables"
+import { rem } from "../../styles/mixins"
 
 interface IBlockTextProps {
 	heading: string
@@ -25,8 +26,11 @@ export const BlockText = ({ heading, description }: IBlockTextProps) => (
 )
 
 const BlockTextContainer = styled.div`
-	max-width: 50%;
-	padding: 96px 0;
+	max-width: 100%;
+	padding: 10vh 0;
+	@media (min-width: ${rem(breakpoints.md)}em) {
+		max-width: 50%;
+	}
 	h3 {
 		font-family: ${fonts.serif};
 	}

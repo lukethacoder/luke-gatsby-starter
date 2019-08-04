@@ -1,14 +1,10 @@
 import styled from "@emotion/styled"
-// .layout {
-// 	display: block;
-
-// 	min-height: 100vh;
-// }
 
 export default styled.div`
+	height: 100%;
 	.layout {
 		display: block;
-
-		min-height: 100vh;
+		/* min-height: 100%; */
+		height: 100%;
 	}
 `

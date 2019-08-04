@@ -17,18 +17,23 @@ export default `
   html {
     // font-size: ${dimensions.font_size.regular}px !important;
     // line-height: ${dimensions.line_height.regular} !important;
-    height: 100%;  }
+    height: 100%;
+    overflow: hidden;
+  }
 
   body {
     width: 100%;
+    max-height: 100%;
     min-height: 100%;
+    height: 100%;
+    display: inline-block;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: ${fonts.sans_serif};
     color: ${colors.black};
-    background-color: ${colors.white};
+    background-color: ${colors.gradientStart};
     background: ${colors.gradientStart}; /* Old browsers */
     background: -moz-linear-gradient(-45deg, ${colors.gradientStart} 0%, ${
 	colors.gradientEnd
@@ -48,6 +53,13 @@ export default `
     -ms-text-size-adjust: 100%;
   }
 
+  #___gatsby {
+    height: 100%;
+  }
+  #___gatsby > div {
+    height: 100%;
+  }
+
   a {
     color: ${colors.brand.primary};
     text-decoration: none;
@@ -59,44 +71,6 @@ export default `
     position: relative;
   }
 
-  figure {
-    margin: 2rem 0;
-  }
-
-  figcaption {
-    font-size: 80%;
-  }
-
-  table {
-    width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid ${colors.brand.quaternary};
-    font-size: 85%;
-    border-collapse: collapse;
-  }
-
-  td,
-  th {
-    padding: .25rem .5rem;
-    border: 1px solid ${colors.brand.quaternary};
-  }
-
-  th {
-    text-align: left;
-  }
-
-  tbody {
-    tr {
-      &:nth-of-type(odd) {
-        td {
-          background-color: ${colors.brand.quaternary};
-        }
-        tr {
-          background-color: ${colors.brand.quaternary};
-        }
-      }
-    }
-  }
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 1.414rem;
