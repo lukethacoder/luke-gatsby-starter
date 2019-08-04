@@ -48,7 +48,7 @@
 		"lodash": "4.17.13",
 		"react": "16.8.4",
 		"react-dom": "16.8.4",
-		"react-helmet": "5.2.0",
+		"react-helmet": "5.2.1",
 		"react-spring": "^8.0.25"
 	},
 	"devDependencies": {
