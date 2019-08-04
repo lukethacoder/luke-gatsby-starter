@@ -3,13 +3,13 @@ import styled from "@emotion/styled"
 import { widths, colors } from "../../styles/variables"
 
 export const StyledFooter = styled.footer`
-	max-width: ${widths.lg};
-	margin: 0 auto;
 	bottom: 0;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	padding: 24px 0;
 	.footer__wrapper {
+		max-width: ${widths.lg}px;
+		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

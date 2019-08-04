@@ -4,9 +4,10 @@ import styled from "@emotion/styled"
 const StyledLayoutMain = styled.div`
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	min-height: 100vh;
-	/* max-width: 0px; */
+	height: 100%;
+	> section {
+		height: 100%;
+	}
 `
 
 interface LayoutMainProps {

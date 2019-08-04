@@ -28,7 +28,7 @@ export default ({ children }: IAppLayoutProps) => {
 	})
 
 	return (
-		<div id="hola">
+		<>
 			<Helmet {...helmet} />
 			<Global styles={() => css(normalize)} />
 
@@ -37,6 +37,6 @@ export default ({ children }: IAppLayoutProps) => {
 			</LayoutWrapper>
 
 			{isDev && <Devtools />}
-		</div>
+		</>
 	)
 }

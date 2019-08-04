@@ -2,11 +2,12 @@ import styled from "@emotion/styled"
 import { colors } from "../../styles/variables"
 
 export const StyledDevTools = styled.div`
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
+	display: none;
 	width: 100vw;
-	height: 100vh;
+	/* min-height: 100vh; */
 	background-color: ${colors.brand.primary};
 	opacity: 0;
 	z-index: -1;
