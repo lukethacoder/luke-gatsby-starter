@@ -58,7 +58,7 @@
 		"@types/node": "12.7.5",
 		"@types/react-dom": "16.8.5",
 		"@types/react-helmet": "5.0.8",
-		"@types/styled-components": "^4.1.16",
+		"@types/styled-components": "^4.1.19",
 		"prettier": "^1.18.2",
 		"rimraf": "2.6.3",
 		"stylelint": "9.10.1",
