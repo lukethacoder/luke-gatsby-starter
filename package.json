@@ -27,7 +27,7 @@
 		"stylelint": "stylelint 'src/**/*.scss' --syntax scss"
 	},
 	"dependencies": {
-		"@emotion/core": "^10.0.10",
+		"@emotion/core": "^10.0.17",
 		"@emotion/styled": "^10.0.12",
 		"@fortawesome/fontawesome-svg-core": "^1.2.19",
 		"@fortawesome/free-brands-svg-icons": "^5.10.1",
@@ -43,7 +43,7 @@
 		"gatsby-plugin-react-helmet": "3.0.8",
 		"gatsby-plugin-react-svg": "2.1.1",
 		"gatsby-plugin-sharp": "2.0.25",
-		"gatsby-plugin-typescript": "2.0.10",
+		"gatsby-plugin-typescript": "2.1.8",
 		"gatsby-transformer-sharp": "2.1.15",
 		"lodash": "4.17.13",
 		"react": "16.8.4",
@@ -54,8 +54,8 @@
 	"devDependencies": {
 		"@babel/core": "7.3.4",
 		"@types/lodash": "4.14.122",
-		"@types/node": "11.10.4",
 		"@types/react": "16.9.2",
+		"@types/node": "12.7.5",
 		"@types/react-dom": "16.8.5",
 		"@types/react-helmet": "5.0.8",
 		"@types/styled-components": "^4.1.16",
@@ -63,7 +63,7 @@
 		"rimraf": "2.6.3",
 		"stylelint": "9.10.1",
 		"tslint": "5.13.1",
-		"tslint-react": "3.6.0",
+		"tslint-react": "4.0.0",
 		"typescript": "3.3.3333"
 	}
 }
