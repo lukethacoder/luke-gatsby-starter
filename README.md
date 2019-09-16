@@ -6,15 +6,28 @@ Kick off your project with this opinionated boilerplate. This barebones starter 
 
 Install:
 
+> make sure GatsbyJS is globally installed
+
 ```bash
+# yarn
+yarn global add gatsby-cli
+
+# npm
 npm install -g gatsby-cli
+```
+
+```bash
 gatsby new my-app "https://github.com/lukethacoder/gatsby-starter-luke#master --recursive"
 ```
 
-Run:
+Development Environment:
 
 ```bash
+# yarn
 yarn dev
+
+# npm
+npm run dev
 ```
 
 ## Things to know
