@@ -34,11 +34,7 @@ export default ({ children }: IAppLayoutProps) => {
 			<Helmet {...helmet} />
 			<Global styles={() => css(normalize)} />
 
-			<Header />
-
-			{/* <Header /> */}
 			<LayoutMain>{children}</LayoutMain>
-			{/* <Footer /> */}
 
 			{isDev && <Devtools />}
 		</LayoutRoot>

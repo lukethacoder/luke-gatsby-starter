@@ -33,19 +33,13 @@ module.exports = {
 			},
 		},
 		{
-			resolve: "gatsby-plugin-transition-link",
+			resolve: `gatsby-plugin-layout`,
 			options: {
-				layout: require.resolve(`./src/components/AppLayout/index.tsx`),
+				component: require.resolve(
+					`./src/components/AppLayout/index.tsx`
+				),
 			},
 		},
-		// {
-		// 	resolve: `gatsby-plugin-layout`,
-		// 	options: {
-		// 		component: require.resolve(
-		// 			`./src/components/AppLayout/index.tsx`
-		// 		),
-		// 	},
-		// },
 		`gatsby-plugin-emotion`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-typescript`,

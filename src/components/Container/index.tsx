@@ -12,6 +12,7 @@ export const Container = ({ children }: IContainerProps) => (
 
 const StyledContainer = styled.section`
 	max-width: ${widths.lg}px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 16px;
 `

@@ -7,7 +7,7 @@ const StyledLayoutMain = styled.main`
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	padding: ${rem(48)}em 0 0;
+	/* padding: ${rem(48)}em 0 0; */
 	min-height: 100vh;
 	/* max-width: 0px; */
 `

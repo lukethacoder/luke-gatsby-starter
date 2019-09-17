@@ -4,16 +4,20 @@ import Helmet from "react-helmet"
 import { Intro } from "../components/Intro"
 import { Highlight } from "../components/Intro/Highlight"
 import { BlockText } from "../components/BlockText"
+import { AnimatedFade } from "../animations"
 
 export default () => (
 	<>
 		<Helmet title="Home" />
 
 		<Intro>
-			Opinionated starter using: <Highlight>TypeScript</Highlight>,&nbsp;
-			<Highlight>styled-components</Highlight>,{" "}
-			<Highlight>React Spring</Highlight>, &{" "}
-			<Highlight>React Hooks</Highlight>.
+			<AnimatedFade>
+				Opinionated starter using: <Highlight>TypeScript</Highlight>
+				,&nbsp;
+				<Highlight>styled-components</Highlight>,{" "}
+				<Highlight>React Spring</Highlight>, &{" "}
+				<Highlight>React Hooks</Highlight>.
+			</AnimatedFade>
 		</Intro>
 
 		<BlockText

@@ -2,17 +2,18 @@ import * as React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { Link as HeaderLink } from "./Link"
+import { Link } from "../Link"
 import StarterLogo from "../../assets/svg/luke-logo.svg"
 import { HeaderContainer, HeaderMenu } from "./style"
 
 export const Header = () => (
 	<HeaderContainer>
 		<nav className="header__wrapper">
-			<HeaderLink name="home" to="/">
+			<Link to="/">
 				<div className="logo">
 					<StarterLogo />
 				</div>
-			</HeaderLink>
+			</Link>
 
 			<HeaderMenu>
 				<HeaderLink name="about" to="/about" />
