@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as React from "react"
 
 interface ILinkProps {
@@ -14,6 +15,17 @@ export const Link = ({ children, ...props }: ILinkProps) => {
 		isNext = true
 	} catch (e) {
 		// noop
+	}
+
+	if (!Component && !isNext) {
+		console.log("is no component yet (try gatsby-plugin-transition-link)")
+		try {
+			Component = require("gatsby-plugin-transition-link").Link
+			console.warn(<Component />)
+			console.warn("is gatsby-plugin-transition-link")
+		} catch (e) {
+			// noop
+		}
 	}
 
 	if (!Component && !isNext) {

@@ -28,5 +28,17 @@ export const Link = ({ name, to, icon }: ILinkProps) => {
 		)
 	}
 
-	return <InternalLink to={to}>{content()}</InternalLink>
+	return (
+		<InternalLink
+			to={to}
+			exit={{
+				length: 1,
+			}}
+			entry={{
+				delay: 0.6,
+			}}
+		>
+			{content()}
+		</InternalLink>
+	)
 }
