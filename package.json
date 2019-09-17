@@ -61,7 +61,7 @@
 		"@types/styled-components": "^4.1.19",
 		"prettier": "^1.18.2",
 		"rimraf": "2.6.3",
-		"stylelint": "9.10.1",
+		"stylelint": "11.0.0",
 		"tslint": "5.13.1",
 		"tslint-react": "4.0.0",
 		"typescript": "3.3.3333"
