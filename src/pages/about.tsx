@@ -3,14 +3,19 @@ import Helmet from "react-helmet"
 
 import { Intro } from "../components/Intro"
 import { Highlight } from "../components/Intro/Highlight"
+import { AnimateFadeUp } from "../animations"
 
-export default () => (
-	<>
-		<Helmet title="About" />
+export default () => {
+	return (
+		<>
+			<Helmet title="About" />
 
-		<Intro>
-			An <Highlight>about</Highlight> page eh?
-			<br />
-		</Intro>
-	</>
-)
+			<Intro>
+				<AnimateFadeUp>
+					An <Highlight>about</Highlight> page eh?
+				</AnimateFadeUp>
+				<br />
+			</Intro>
+		</>
+	)
+}

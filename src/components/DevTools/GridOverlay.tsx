@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import { useKeyDown } from "../../hooks/use-keydown"
-import { useLocalStorage } from "../../hooks/use-localstorage"
+import { useKeyDown } from "../../hooks/useKeyDown"
+import { useLocalStorage } from "../../hooks/useLocalStorage"
 
 const LOCAL_STORAGE_KEY_HORIZONTAL = "_lukeDevtoolsHorizontalGrid"
 const LOCAL_STORAGE_KEY_VERTICAL = "_lukeDevtoolsVerticalGrid"

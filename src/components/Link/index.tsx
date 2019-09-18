@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as React from "react"
 
 interface ILinkProps {
@@ -10,6 +11,7 @@ export const Link = ({ children, ...props }: ILinkProps) => {
 	let isNext = false
 
 	try {
+		/* eslint-disable */
 		Component = require("next/link")
 		isNext = true
 	} catch (e) {
@@ -19,6 +21,7 @@ export const Link = ({ children, ...props }: ILinkProps) => {
 	if (!Component && !isNext) {
 		console.log("is no component yet (try gatsby)")
 		try {
+			/* eslint-disable */
 			Component = require("gatsby").Link
 			console.warn(<Component />)
 			console.warn("is gatsbyjs")
@@ -29,6 +32,7 @@ export const Link = ({ children, ...props }: ILinkProps) => {
 
 	if (!Component && !isNext) {
 		try {
+			/* eslint-disable */
 			Component = require("react-router-dom").Link
 		} catch (e) {
 			// noop

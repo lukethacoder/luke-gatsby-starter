@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import { useKeyDown } from "../../hooks/use-keydown"
-import { useLocalStorage } from "../../hooks/use-localstorage"
+import { useKeyDown } from "../../hooks/useKeyDown"
+import { useLocalStorage } from "../../hooks/useLocalStorage"
 
 import { GridOverlay } from "./GridOverlay"
 
