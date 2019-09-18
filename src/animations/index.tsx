@@ -1,6 +1,6 @@
 import { useSpring, animated, config } from "react-spring"
 
-export const AnimatedFade = ({ children }: any) => {
+export const AnimateFadeUp = ({ children }: any) => {
 	const fade = useSpring({
 		config: config.slow,
 		from: {

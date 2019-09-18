@@ -5,9 +5,7 @@ import styled from "@emotion/styled"
 
 import normalize from "../../styles/normalize"
 
-import { LayoutWrapper } from "./wrapper"
 import LayoutMain from "./LayoutMain"
-import { Header } from "../Header"
 import { helmet } from "../../utils/helmet"
 import { Devtools } from "../DevTools"
 
