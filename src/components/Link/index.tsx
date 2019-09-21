@@ -19,12 +19,12 @@ export const Link = ({ children, ...props }: ILinkProps) => {
 	}
 
 	if (!Component && !isNext) {
-		console.log("is no component yet (try gatsby)")
+		// console.log("is no component yet (try gatsby)")
 		try {
 			/* eslint-disable */
 			Component = require("gatsby").Link
-			console.warn(<Component />)
-			console.warn("is gatsbyjs")
+			// console.warn(<Component />)
+			// console.warn("is gatsbyjs")
 		} catch (e) {
 			// noop
 		}
