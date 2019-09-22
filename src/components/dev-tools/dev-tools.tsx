@@ -1,9 +1,9 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 
 import { useKeyDown } from "../../hooks/useKeyDown"
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 
-import { GridOverlay } from "./GridOverlay"
+import { GridOverlay } from "./grid-overlay"
 
 import { StyledDevTools } from "./style"
 
@@ -16,7 +16,7 @@ export const Devtools = () => {
 	)
 	const keys = useKeyDown()
 
-	React.useEffect(() => {
+	useEffect(() => {
 		// ctrl + ,
 		if (keys.includes(17) && keys.includes(188)) {
 			console.log("hit keys")

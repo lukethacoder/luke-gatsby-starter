@@ -1,7 +1,7 @@
-import * as React from "react"
+import React, { ReactNode } from "react"
 
 interface IRowProps {
-	children: React.ReactNode
+	children: ReactNode
 }
 
 export const Row = ({ children }: IRowProps) => <div>{children}</div>

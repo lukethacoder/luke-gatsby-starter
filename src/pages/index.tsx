@@ -2,9 +2,8 @@ import React, { useRef, useEffect } from "react"
 import Helmet from "react-helmet"
 import { useSpring, animated, config } from "react-spring"
 
-import { Intro } from "../components/Intro"
-import { Highlight } from "../components/Intro/Highlight"
-import { BlockText } from "../components/BlockText"
+import { Intro } from "../components/intro"
+import { Highlight } from "../components/intro/highlight"
 import { AnimateFadeUp } from "../animations"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
 
@@ -36,34 +35,30 @@ export default () => {
 			<Helmet title="Home" />
 
 			<Intro>
-				<AnimateFadeUp>
+				{/* <AnimateFadeUp> */}
+				<>
 					Opinionated starter using: <Highlight>TypeScript</Highlight>
 					,&nbsp;
 					<Highlight>styled-components</Highlight>,{" "}
 					<Highlight>React Spring</Highlight>, &{" "}
 					<Highlight>React Hooks</Highlight>.
-				</AnimateFadeUp>
+				</>
+				{/* </AnimateFadeUp> */}
 			</Intro>
 
 			<div ref={elementRef}>
 				<animated.div style={fade}>
-					<BlockText
-						heading="Documentation"
-						description={
-							<>
-								Documentation for this GatsbyJS starter can be
-								found{" "}
-								<a
-									href="https://github.com/lukethacoder/gatsby-starter-luke"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									here
-								</a>
-								.
-							</>
-						}
-					/>
+					<p>
+						Documentation for this GatsbyJS starter can be found
+						<a
+							href="https://github.com/lukethacoder/gatsby-starter-luke"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							here
+						</a>
+						.
+					</p>
 				</animated.div>
 			</div>
 		</>

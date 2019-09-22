@@ -1,7 +1,7 @@
 import React from "react"
-import AppLayout from "./src/components/AppLayout"
-import { Header } from "./src/components/Header"
-import { Footer } from "./src/components/Footer"
+import { AppLayout } from "./src/components/app-layout"
+import { Header } from "./src/components/header"
+import { Footer } from "./src/components/footer"
 
 import Logo from "./src/assets/svg/luke-logo.svg"
 
@@ -13,29 +13,31 @@ library.add(fab)
 
 export const wrapPageElement = ({ element, props }) => (
 	<AppLayout {...props}>
-		<Header />
-		{element}
-		{/* elements that only need to render once can be placed here */}
-		<Footer
-			logo={<Logo />}
-			social={[
-				{
-					icon: <FontAwesomeIcon icon={["fab", "twitter"]} />,
-					to: "https://twitter.com/lu_ke____",
-				},
-				{
-					icon: <FontAwesomeIcon icon={["fab", "github"]} />,
-					to: "https://github.com/lukethacoder",
-				},
-				{
-					icon: <FontAwesomeIcon icon={["fab", "instagram"]} />,
-					to: "https://www.instagram.com/lukesecombdigital",
-				},
-				{
-					icon: <FontAwesomeIcon icon={["fab", "linkedin"]} />,
-					to: "https://linkedin.com/in/luke-secomb",
-				},
-			]}
-		/>
+		<>
+			<Header />
+			<>{element}</>
+			{/* elements that only need to render once can be placed here */}
+			<Footer
+				logo={<Logo />}
+				social={[
+					{
+						icon: <FontAwesomeIcon icon={["fab", "twitter"]} />,
+						to: "https://twitter.com/lu_ke____",
+					},
+					{
+						icon: <FontAwesomeIcon icon={["fab", "github"]} />,
+						to: "https://github.com/lukethacoder",
+					},
+					{
+						icon: <FontAwesomeIcon icon={["fab", "instagram"]} />,
+						to: "https://www.instagram.com/lukesecombdigital",
+					},
+					{
+						icon: <FontAwesomeIcon icon={["fab", "linkedin"]} />,
+						to: "https://linkedin.com/in/luke-secomb",
+					},
+				]}
+			/>
+		</>
 	</AppLayout>
 )

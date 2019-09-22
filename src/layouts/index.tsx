@@ -1,7 +1,7 @@
-import * as React from "react"
+import React, { SFC, ReactNode } from "react"
+import { AppLayout } from "../components/app-layout"
 
-import AppLayout from "../components/AppLayout"
-const IndexLayout: React.SFC = ({ children }) => {
+const IndexLayout: SFC = ({ children }: ReactNode) => {
 	return <AppLayout>{children}</AppLayout>
 }
 

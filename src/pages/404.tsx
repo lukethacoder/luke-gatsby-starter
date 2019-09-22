@@ -1,9 +1,9 @@
-import * as React from "react"
+import React from "react"
 import styled from "@emotion/styled"
 import Helmet from "react-helmet"
 
-import { Segment } from "../components/Segment"
-import { Link } from "../components/Link"
+import { Segment } from "../components/segment"
+import { Link } from "../components/link"
 
 export default () => (
 	<>

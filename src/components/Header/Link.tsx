@@ -1,11 +1,11 @@
-import * as React from "react"
+import React, { ReactNode, cloneElement } from "react"
 
-import { Link as InternalLink } from "../Link"
+import { Link as InternalLink } from "../link"
 
 interface ILinkProps {
 	name: string
 	to: string
-	icon?: React.ReactNode
+	icon?: ReactNode
 }
 
 export const Link = ({ name, to, icon }: ILinkProps) => {
@@ -15,7 +15,7 @@ export const Link = ({ name, to, icon }: ILinkProps) => {
 
 	const content = () => (
 		<>
-			{icon && React.cloneElement(icon as any, { className: "none" })}
+			{icon && cloneElement(icon as any, { className: "none" })}
 			{name}
 		</>
 	)
