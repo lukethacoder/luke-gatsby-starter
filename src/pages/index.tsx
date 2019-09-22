@@ -12,22 +12,23 @@ export default () => {
 	// Create the ref to our element
 	const elementRef = useRef<HTMLDivElement | Element>(null)
 	const [inView, entry] = useIntersectionObserver(elementRef, {
-		threshold: 0,
+		threshold: 1,
 	})
 
 	// console.log our state everytime its updated to see if it works.
 	useEffect(() => {
-		console.log(inView)
+		console.log("inView => ", inView)
+		console.log("entry => ", entry)
 	}, [inView])
 
 	const fade = useSpring({
-		config: config.slow,
+		config: config.gentle,
 		from: {
 			opacity: 0,
 			transform: "translate(0px, 24px)",
 		},
 		opacity: inView ? 1 : 0,
-		transform: "translate(0px, 0px)",
+		transform: inView ? "translate(0px, 0px)" : "translate(0px, 24px)",
 	})
 
 	return (
@@ -65,13 +66,6 @@ export default () => {
 					/>
 				</animated.div>
 			</div>
-			{/* 
-			<AnimateFadeUp>
-				<img
-					style={{ height: "240px" }}
-					src="https://source.unsplash.com/collection/7503176/1600x900"
-				/>
-			</AnimateFadeUp> */}
 		</>
 	)
 }
