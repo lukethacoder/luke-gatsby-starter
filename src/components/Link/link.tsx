@@ -1,12 +1,12 @@
 /* eslint-disable */
-import React, { ReactNode } from "react"
+import React, { ReactNode, FunctionComponent } from "react"
 
 interface ILinkProps {
 	children?: ReactNode
 	[key: string]: any
 }
 
-export const Link = ({ children, ...props }: ILinkProps) => {
+export const Link: FunctionComponent<ILinkProps> = ({ children, ...props }) => {
 	let Component
 	let isNext = false
 

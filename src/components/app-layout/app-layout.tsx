@@ -1,4 +1,4 @@
-import React, { SFC, ReactNode } from "react"
+import React, { FunctionComponent } from "react"
 import Helmet from "react-helmet"
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
@@ -13,37 +13,26 @@ import "./style"
 
 const isDev = process.env.NODE_ENV === "development"
 
-export const AppLayout = ({ children }: IAppLayoutProps) => {
+export const AppLayout: FunctionComponent = ({ children }) => {
 	return (
 		<LayoutRoot>
-			<>
-				<Helmet {...helmet} />
-				<Global styles={() => css(normalize)} />
-
-				<LayoutMain>{children}</LayoutMain>
-
-				{isDev && <Devtools />}
-			</>
+			<Helmet {...helmet} />
+			<Global styles={() => css(normalize)} />
+			<LayoutMain>{children}</LayoutMain>
+			{isDev && <Devtools />}
 		</LayoutRoot>
 	)
 }
 
-const LayoutRoot: SFC<LayoutRootProps> = ({ children }) => (
+const LayoutRoot: FunctionComponent = ({ children }) => (
 	<>
 		<Global styles={() => css(normalize)} />
 		<div>{children}</div>
 	</>
 )
 
-interface IAppLayoutProps {
-	children?: any
-}
 const StyledLayoutRoot = styled.div`
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 `
-
-interface LayoutRootProps {
-	className?: string
-}

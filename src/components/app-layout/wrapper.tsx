@@ -1,4 +1,4 @@
-import React, { SFC } from "react"
+import React, { FunctionComponent } from "react"
 import styled from "@emotion/styled"
 
 const StyledLayoutWrapper = styled.div`
@@ -15,7 +15,7 @@ interface LayoutWrapperProps {
 	children?: any
 }
 
-const LayoutWrapper: SFC<LayoutWrapperProps> = ({
+const LayoutWrapper: FunctionComponent<LayoutWrapperProps> = ({
 	children,
 	className,
 }: LayoutWrapperProps) => (

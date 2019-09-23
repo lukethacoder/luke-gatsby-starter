@@ -1,7 +1,3 @@
-import React, { ReactNode } from "react"
+import React, { FunctionComponent } from "react"
 
-interface IRowProps {
-	children: ReactNode
-}
-
-export const Row = ({ children }: IRowProps) => <div>{children}</div>
+export const Row: FunctionComponent = ({ children }) => <div>{children}</div>

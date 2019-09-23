@@ -32,14 +32,6 @@ module.exports = {
 				trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_CODE,
 			},
 		},
-		{
-			resolve: `gatsby-plugin-layout`,
-			options: {
-				component: require.resolve(
-					`./src/components/app-layout/index.tsx`
-				),
-			},
-		},
 		`gatsby-plugin-emotion`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-typescript`,

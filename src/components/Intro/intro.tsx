@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React, { FunctionComponent } from "react"
 import styled from "@emotion/styled"
 
 import { rem } from "../../styles/mixins"
@@ -7,11 +7,7 @@ import { Container } from "../container"
 import { Row } from "../row"
 import { colors } from "../../styles/variables"
 
-interface IIntroProps {
-	children: ReactNode
-}
-
-export const Intro = ({ children }: IIntroProps) => {
+export const Intro: FunctionComponent = ({ children }) => {
 	return (
 		<Container>
 			<StyledIntro>

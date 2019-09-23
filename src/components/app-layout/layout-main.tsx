@@ -1,7 +1,9 @@
-import React, { SFC, ReactNode } from "react"
+import React, { FunctionComponent } from "react"
 import styled from "@emotion/styled"
 
-export const LayoutMain = ({ children }: any) => <div>{children}</div>
+export const LayoutMain: FunctionComponent = ({ children }) => (
+	<div>{children}</div>
+)
 
 const StyledLayoutMain = styled.section`
 	display: flex;

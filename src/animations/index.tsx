@@ -1,6 +1,7 @@
+import React, { FunctionComponent } from "react"
 import { useSpring, animated, config } from "react-spring"
 
-export const AnimateFadeUp = ({ children }: any) => {
+export const AnimateFadeUp: FunctionComponent = ({ children }) => {
 	const fade = useSpring({
 		config: config.slow,
 		from: {

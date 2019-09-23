@@ -35,15 +35,16 @@ export default () => {
 			<Helmet title="Home" />
 
 			<Intro>
-				{/* <AnimateFadeUp> */}
-				<>
-					Opinionated starter using: <Highlight>TypeScript</Highlight>
-					,&nbsp;
-					<Highlight>styled-components</Highlight>,{" "}
-					<Highlight>React Spring</Highlight>, &{" "}
-					<Highlight>React Hooks</Highlight>.
-				</>
-				{/* </AnimateFadeUp> */}
+				<AnimateFadeUp>
+					<>
+						Opinionated starter using:{" "}
+						<Highlight>TypeScript</Highlight>
+						,&nbsp;
+						<Highlight>styled-components</Highlight>,{" "}
+						<Highlight>React Spring</Highlight>, &{" "}
+						<Highlight>React Hooks</Highlight>.
+					</>
+				</AnimateFadeUp>
 			</Intro>
 
 			<div ref={elementRef}>

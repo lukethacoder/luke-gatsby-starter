@@ -1,12 +1,8 @@
-import React, { ReactNode } from "react"
+import React, { FunctionComponent } from "react"
 import styled from "@emotion/styled"
 import { widths } from "../../styles/variables"
 
-interface IContainerProps {
-	children: ReactNode
-}
-
-export const Container = ({ children }: IContainerProps) => (
+export const Container: FunctionComponent = ({ children }) => (
 	<StyledContainer>{children}</StyledContainer>
 )
 

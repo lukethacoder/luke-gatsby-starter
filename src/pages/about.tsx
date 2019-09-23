@@ -4,17 +4,18 @@ import Helmet from "react-helmet"
 import { Highlight } from "../components/intro/highlight"
 import { AnimateFadeUp } from "../animations"
 
-export default () => {
-	return (
-		<>
-			<Helmet title="About" />
+export default () => (
+	<>
+		<Helmet title="About" />
 
+		<AnimateFadeUp>
 			<p>
 				An <Highlight>about</Highlight> page eh?
 			</p>
-			<br />
+		</AnimateFadeUp>
+		<br />
 
-			{/* <AnimateFadeUp> */}
+		<AnimateFadeUp>
 			<img
 				style={{
 					height: "240px",
@@ -24,7 +25,6 @@ export default () => {
 				}}
 				src="https://source.unsplash.com/collection/7503176/1600x900"
 			/>
-			{/* </AnimateFadeUp> */}
-		</>
-	)
-}
+		</AnimateFadeUp>
+	</>
+)
