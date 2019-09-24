@@ -47,7 +47,7 @@
 		"gatsby-plugin-sharp": "^2.0.25",
 		"gatsby-plugin-transition-link": "^1.13.0",
 		"gatsby-plugin-typescript": "^2.1.8",
-		"gatsby-transformer-sharp": "^2.2.13",
+		"gatsby-transformer-sharp": "^2.2.17",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
 		"react-helmet": "^5.2.1",
