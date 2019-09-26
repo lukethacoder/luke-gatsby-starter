@@ -46,7 +46,7 @@
 		"gatsby-plugin-react-svg": "^2.1.1",
 		"gatsby-plugin-sharp": "^2.0.25",
 		"gatsby-plugin-transition-link": "^1.13.0",
-		"gatsby-plugin-typescript": "^2.1.8",
+		"gatsby-plugin-typescript": "^2.1.11",
 		"gatsby-transformer-sharp": "^2.2.13",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
