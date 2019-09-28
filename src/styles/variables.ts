@@ -73,7 +73,7 @@ export const widths: NumberObjProps = {
 }
 interface DimensionsProps {
 	font_size: NumberObjProps
-	heading_sizes: NumberObjProps
+	font_sizes: NumberObjProps
 	line_height: NumberObjProps
 }
 export const dimensions: DimensionsProps = {
@@ -82,11 +82,14 @@ export const dimensions: DimensionsProps = {
 		regular: 16,
 		large: 18,
 	},
-	heading_sizes: {
+	font_sizes: {
 		h1: rem(40),
 		h2: rem(32),
 		h3: rem(24),
 		h4: rem(20),
+		h5: rem(20),
+		h6: rem(20),
+		p: rem(20),
 	},
 	line_height: {
 		regular: 1.45,

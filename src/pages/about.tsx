@@ -1,21 +1,17 @@
-import * as React from "react"
+import React from "react"
 import Helmet from "react-helmet"
 
-import { Intro } from "../components/Intro"
-import { Highlight } from "../components/Intro/Highlight"
-import { AnimateFadeUp } from "../animations"
+import { Highlight } from "../components/intro/highlight"
+import { Banner } from "../components/banner"
 
-export default () => {
-	return (
-		<>
-			<Helmet title="About" />
+export default () => (
+	<>
+		<Helmet title="About" />
 
-			<Intro>
-				<AnimateFadeUp>
-					An <Highlight>about</Highlight> page eh?
-				</AnimateFadeUp>
-				<br />
-			</Intro>
-		</>
-	)
-}
+		<Banner>
+			<h2>
+				An <Highlight>about</Highlight> page eh?
+			</h2>
+		</Banner>
+	</>
+)

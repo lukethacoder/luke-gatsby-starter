@@ -1,7 +1,7 @@
 import React from "react"
-import AppLayout from "./src/components/AppLayout"
-import { Header } from "./src/components/Header"
-import { Footer } from "./src/components/Footer"
+import { IndexLayout } from "./src/layouts/index"
+import { Header } from "./src/components/header"
+import { Footer } from "./src/components/footer"
 
 import Logo from "./src/assets/svg/luke-logo.svg"
 
@@ -12,7 +12,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
 export const wrapPageElement = ({ element, props }) => (
-	<AppLayout {...props}>
+	<IndexLayout {...props}>
 		<Header />
 		{element}
 		{/* elements that only need to render once can be placed here */}
@@ -37,5 +37,5 @@ export const wrapPageElement = ({ element, props }) => (
 				},
 			]}
 		/>
-	</AppLayout>
+	</IndexLayout>
 )

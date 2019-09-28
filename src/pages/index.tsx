@@ -1,47 +1,56 @@
-import * as React from "react"
+import React from "react"
 import Helmet from "react-helmet"
 
-import { Intro } from "../components/Intro"
-import { Highlight } from "../components/Intro/Highlight"
-import { BlockText } from "../components/BlockText"
-import { AnimateFadeUp } from "../animations"
+import { useTrail, animated } from "react-spring"
 
-export default () => (
-	<>
-		<Helmet title="Home" />
+import { Intro } from "../components/intro"
+import { Banner } from "../components/banner"
+import { Container } from "../components/container"
+import { Columns } from "../components/columns"
+import { Highlight } from "../components/intro/highlight"
+import { SpringFadeUp, TrailFadeUp } from "../utils/animations"
 
-		<Intro>
-			<AnimateFadeUp>
-				Opinionated starter using: <Highlight>TypeScript</Highlight>
-				,&nbsp;
-				<Highlight>styled-components</Highlight>,{" "}
-				<Highlight>React Spring</Highlight>, &{" "}
-				<Highlight>React Hooks</Highlight>.
-			</AnimateFadeUp>
-		</Intro>
+export default () => {
+	const trail = useTrail(6, {
+		from: {
+			opacity: 0,
+			transform: "translate(0px, 24px)",
+		},
+		opacity: 1,
+		transform: "translate(0px, 0px)",
+	})
+	return (
+		<>
+			<Helmet title="Home" />
 
-		<BlockText
-			heading="Documentation"
-			description={
-				<>
-					Documentation for this GatsbyJS starter can be found{" "}
-					<a
-						href="https://github.com/lukethacoder/gatsby-starter-luke"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						here
-					</a>
-					.
-				</>
-			}
-		/>
-		{/* 
-		<AnimateFadeUp>
-			<img
-				style={{ height: "240px" }}
-				src="https://source.unsplash.com/collection/7503176/1600x900"
-			/>
-		</AnimateFadeUp> */}
-	</>
-)
+			<Banner>
+				<h2>
+					Opinionated starter using:
+					<br />
+					<Highlight>TypeScript</Highlight>,{" "}
+					<Highlight>styled-components</Highlight>, <br />
+					<Highlight>React Hooks</Highlight> &{" "}
+					<Highlight>react-spring</Highlight>.
+				</h2>
+			</Banner>
+
+			<Container>
+				<Intro>
+					<SpringFadeUp>
+						<p>
+							Documentation for this GatsbyJS starter can be found{" "}
+							<a
+								href="https://github.com/lukethacoder/gatsby-starter-luke"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								here
+							</a>
+							.
+						</p>
+					</SpringFadeUp>
+				</Intro>
+			</Container>
+		</>
+	)
+}
