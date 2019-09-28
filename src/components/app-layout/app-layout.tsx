@@ -4,8 +4,6 @@ import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 import normalize from "../../styles/normalize"
-
-import { LayoutMain } from "./layout-main"
 import { helmet } from "../../utils/helmet"
 import { Devtools } from "../dev-tools"
 
@@ -15,21 +13,14 @@ const isDev = process.env.NODE_ENV === "development"
 
 export const AppLayout: FunctionComponent = ({ children }) => {
 	return (
-		<LayoutRoot>
+		<StyledLayoutRoot>
 			<Helmet {...helmet} />
 			<Global styles={() => css(normalize)} />
-			<LayoutMain>{children}</LayoutMain>
+			<div>{children}</div>
 			{isDev && <Devtools />}
-		</LayoutRoot>
+		</StyledLayoutRoot>
 	)
 }
-
-const LayoutRoot: FunctionComponent = ({ children }) => (
-	<>
-		<Global styles={() => css(normalize)} />
-		<div>{children}</div>
-	</>
-)
 
 const StyledLayoutRoot = styled.div`
 	display: flex;

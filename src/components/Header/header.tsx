@@ -16,6 +16,7 @@ export const Header = () => (
 			</Link>
 
 			<HeaderMenu>
+				<HeaderLink name="animations" to="/animations" />
 				<HeaderLink name="about" to="/about" />
 
 				<HeaderLink

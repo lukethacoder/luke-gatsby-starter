@@ -2,29 +2,34 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import { Highlight } from "../components/intro/highlight"
-import { AnimateFadeUp } from "../animations"
+import { SpringFadeUp } from "../utils/animations"
+import { Intro } from "../components/intro"
+import { Container } from "../components/container"
+import { Banner } from "../components/banner"
 
 export default () => (
 	<>
 		<Helmet title="About" />
 
-		<AnimateFadeUp>
-			<p>
+		<Banner>
+			<h2>
 				An <Highlight>about</Highlight> page eh?
-			</p>
-		</AnimateFadeUp>
-		<br />
+			</h2>
+		</Banner>
+		<Container>
+			<br />
 
-		<AnimateFadeUp>
-			<img
-				style={{
-					height: "240px",
-					width: "auto",
-					padding: "24px",
-					margin: "0 auto",
-				}}
-				src="https://source.unsplash.com/collection/7503176/1600x900"
-			/>
-		</AnimateFadeUp>
+			<SpringFadeUp>
+				<img
+					style={{
+						height: "240px",
+						width: "auto",
+						padding: "24px",
+						margin: "0 auto",
+					}}
+					src="https://source.unsplash.com/collection/7503176/1600x900"
+				/>
+			</SpringFadeUp>
+		</Container>
 	</>
 )

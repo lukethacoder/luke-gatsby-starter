@@ -2,22 +2,15 @@ import React, { FunctionComponent } from "react"
 import styled from "@emotion/styled"
 
 import { rem } from "../../styles/mixins"
-
-import { Container } from "../container"
-import { Row } from "../row"
 import { colors } from "../../styles/variables"
 
 export const Intro: FunctionComponent = ({ children }) => {
 	return (
-		<Container>
-			<StyledIntro>
-				<Row>
-					<div className="intro__wrapper">
-						<p>{children}</p>
-					</div>
-				</Row>
-			</StyledIntro>
-		</Container>
+		<StyledIntro>
+			<div className="intro__wrapper">
+				<div>{children}</div>
+			</div>
+		</StyledIntro>
 	)
 }
 
