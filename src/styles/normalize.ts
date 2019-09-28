@@ -220,16 +220,15 @@ export default `
       height: 3px;
     }
   }
+  [data-language="javascript"] {
+    border-bottom-color: ${colors.syntax.javascript};
+  }
+  [data-language="javascript"]:after {
+    content: 'javascript';
+    background-color: ${colors.syntax.javascript};
+  }
 `
 
-// [data-language="javascript"] {
-
-//   border-bottom-color: ${colors.syntax.javascript};
-//     &:after {
-//       content: 'JS';
-//       background-color: ${colors.syntax.javascript};
-//     }
-//   }
 //   [data-language="json"] {
 //     border-bottom-color: ${colors.syntax.json};
 //     &:after {

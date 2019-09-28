@@ -1,4 +1,4 @@
-import { useState, useEffect, RefObject } from "react"
+import { useState, useEffect, RefObject, ReactFragment } from "react"
 
 interface IuseIntersectionObserver {
 	threshold?: number
@@ -7,7 +7,7 @@ interface IuseIntersectionObserver {
 }
 
 export const useIntersectionObserver = (
-	ref: RefObject<HTMLElement | Element> | null | undefined,
+	ref: RefObject<HTMLElement | Element | ReactFragment> | null | undefined,
 	{ threshold, root, rootMargin }: IuseIntersectionObserver
 ) => {
 	// configure the state

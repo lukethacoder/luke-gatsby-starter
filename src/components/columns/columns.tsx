@@ -7,8 +7,13 @@ export const Columns: FunctionComponent<IColumns> = ({
 	children,
 	cols,
 	isResponsive,
+	noPadding,
 }) => (
-	<StyledColumns cols={cols} isResponsive={isResponsive}>
+	<StyledColumns
+		cols={cols}
+		isResponsive={isResponsive}
+		noPadding={noPadding}
+	>
 		{children}
 	</StyledColumns>
 )
@@ -22,7 +27,7 @@ const StyledColumns = styled.section`
 	);
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 16px;
+	padding: ${(props) => (props.noPadding ? 0 : "0 16px")};
 
 	@media (min-width: ${rem(breakpoints.sm)}em) {
 		grid-template-columns: repeat(
@@ -50,4 +55,5 @@ interface IColumns {
 	children?: ReactNode
 	cols: number
 	isResponsive?: boolean
+	noPadding?: boolean
 }

@@ -35,22 +35,6 @@ export default () => {
 			</Banner>
 
 			<Container>
-				<Columns cols={9} isResponsive>
-					<TrailFadeUp>
-						<div>col-1</div>
-						<div>col-2</div>
-						<div>col-3</div>
-					</TrailFadeUp>
-					{/* {trail.map((props) => (
-						<animated.div style={props}>
-							
-							{console.log("props => ", props)}
-						</animated.div>
-					))} */}
-				</Columns>
-			</Container>
-
-			<Container>
 				<Intro>
 					<SpringFadeUp>
 						<p>
