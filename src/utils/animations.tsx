@@ -51,9 +51,7 @@ export const TrailFadeUp: FunctionComponent = ({ children }) => {
 		console.log("entry => ", entry)
 	}, [inView])
 
-	console.log("children to TrailFadeUp => ", children)
-
-	const trail = useTrail(children.length, {
+	const trail = useTrail(children ? children.length : 3, {
 		from: {
 			opacity: 0,
 			transform: "translate(0px, 24px)",
@@ -65,7 +63,9 @@ export const TrailFadeUp: FunctionComponent = ({ children }) => {
 	return (
 		<Fragment ref={elementRef}>
 			{trail.map((props, key) => (
-				<animated.div style={props}>{children[key]}</animated.div>
+				<animated.div style={props}>
+					{children && children[key]}
+				</animated.div>
 			))}
 		</Fragment>
 	)

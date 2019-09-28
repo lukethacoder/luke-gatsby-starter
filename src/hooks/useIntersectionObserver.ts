@@ -59,8 +59,10 @@ export const useIntersectionObserver = (
 		// 		observer.observe(observerRef.current)
 		// 	}
 		// }
-		if (ref.current && !state.triggered) {
-			observer.observe(ref.current)
+		if (typeof window !== `undefined`) {
+			if (ref.current && !state.triggered) {
+				observer.observe(ref.current)
+			}
 		}
 	})
 
