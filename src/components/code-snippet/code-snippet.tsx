@@ -1,7 +1,4 @@
 import React, { FunctionComponent } from "react"
-import styled from "@emotion/styled"
-import { widths, breakpoints } from "../../styles/variables"
-import { rem } from "../../styles/mixins"
 import "prismjs/themes/prism-tomorrow.css"
 
 export const CodeSnippet: FunctionComponent<ICodeSnippet> = ({
