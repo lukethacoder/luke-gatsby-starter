@@ -21,7 +21,7 @@ export const Header = () => (
 
 				<HeaderLink
 					name="github"
-					to="https://github.com/lukethacoder/gatsby-starter-luke"
+					to="https://github.com/lukethacoder/luke-gatsby-starter"
 					icon={<FontAwesomeIcon icon={["fab", "github"]} />}
 				/>
 			</HeaderMenu>

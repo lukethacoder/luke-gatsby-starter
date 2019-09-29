@@ -9,7 +9,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-luke`,
+				name: `luke-gatsby-starter`,
 				short_name: `starter-luke`,
 				start_url: `/`,
 				background_color: `#dfdfdf`,

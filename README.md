@@ -17,7 +17,7 @@ npm install -g gatsby-cli
 ```
 
 ```bash
-gatsby new my-app "https://github.com/lukethacoder/gatsby-starter-luke#master --recursive"
+gatsby new my-app "https://github.com/lukethacoder/luke-gatsby-starter#master --recursive"
 ```
 
 Development Environment:

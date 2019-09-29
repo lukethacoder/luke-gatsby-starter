@@ -40,7 +40,7 @@ export default () => {
 						<p>
 							Documentation for this GatsbyJS starter can be found{" "}
 							<a
-								href="https://github.com/lukethacoder/gatsby-starter-luke"
+								href="https://github.com/lukethacoder/luke-gatsby-starter"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
