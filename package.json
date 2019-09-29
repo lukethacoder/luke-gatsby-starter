@@ -66,6 +66,6 @@
 		"rimraf": "2.6.3",
 		"stylelint": "9.10.1",
 		"tslint": "^5.19.0",
-		"tslint-react": "4.0.0"
+		"tslint-react": "4.1.0"
 	}
 }
