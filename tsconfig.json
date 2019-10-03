@@ -5,16 +5,18 @@
 		"baseUrl": ".",
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
-		"isolatedModules": false,
-		"jsx": "react",
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
 		"lib": ["dom", "es2015", "es2017"],
 		"module": "esnext",
 		"moduleResolution": "node",
 		"noEmit": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
 		"preserveConstEnums": true,
 		"removeComments": false,
+		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
@@ -22,5 +24,6 @@
 		"types": ["node"]
 	},
 	// Specifies a list of glob patterns that match files to be included in compilation.
-	"include": ["./src/**/*"]
+	"include": ["./src/**/*"],
+	"exclude": ["node_modules"]
 }

@@ -22,8 +22,8 @@ export default () => (
 
 		<Container>
 			<TrailSectionContainer>
-				<Columns cols={2} isResponsive noPadding>
-					<Columns cols={1} noPadding>
+				<Columns {...{ cols: 2, isResponsive: true, noPadding: true }}>
+					<Columns {...{ cols: 1, noPadding: true }}>
 						<h3>TrailFadeUp</h3>
 						<TrailContainer>
 							<TrailFadeUp>
