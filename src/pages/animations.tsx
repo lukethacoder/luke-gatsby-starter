@@ -12,8 +12,6 @@ import { rem } from "../styles/mixins"
 
 export default () => (
 	<>
-		<Helmet title="React Spring Animations" />
-
 		<Banner>
 			<h2>
 				<Highlight>react-spring</Highlight> Animations
