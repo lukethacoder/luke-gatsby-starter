@@ -28,7 +28,7 @@
 		"stylelint": "stylelint 'src/**/*.scss' --syntax scss"
 	},
 	"dependencies": {
-		"@emotion/core": "^10.0.17",
+		"@emotion/core": "^10.0.21",
 		"@emotion/styled": "^10.0.17",
 		"@fortawesome/fontawesome-svg-core": "^1.2.22",
 		"@fortawesome/free-brands-svg-icons": "^5.10.1",
