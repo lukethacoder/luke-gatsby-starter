@@ -1,47 +1,31 @@
-/* eslint-disable */
-import React, { ReactNode, FunctionComponent } from "react"
+import React, { ReactNode, cloneElement } from "react"
+import { Link as GatsbyLink } from "gatsby"
 
 interface ILinkProps {
-	children?: ReactNode
-	[key: string]: any
+	children?: ReactNode | any
+	name: string
+	to: string
+	icon?: ReactNode
 }
 
-export const Link: FunctionComponent<ILinkProps> = ({ children, ...props }) => {
-	let Component
-	let isNext = false
+export const Link = ({ children, name, to }: ILinkProps) => {
+	const isLink = typeof to !== "undefined"
+	const isExternal =
+		isLink && /^((https?:)?\/\/|[0-9a-zA-Z]+:)/.test(to || "")
 
-	try {
-		/* eslint-disable */
-		Component = require("next/link")
-		isNext = true
-	} catch (e) {
-		// noop
+	const content = () => <>{children && children}</>
+
+	if (!isExternal) {
+		return (
+			<GatsbyLink key={name} to={to}>
+				{content()}
+			</GatsbyLink>
+		)
 	}
 
-	if (!Component && !isNext) {
-		// console.log("is no component yet (try gatsby)")
-		try {
-			/* eslint-disable */
-			Component = require("gatsby").Link
-			// console.warn(<Component />)
-			// console.warn("is gatsbyjs")
-		} catch (e) {
-			// noop
-		}
-	}
-
-	if (!Component && !isNext) {
-		try {
-			/* eslint-disable */
-			Component = require("react-router-dom").Link
-		} catch (e) {
-			// noop
-		}
-	}
-
-	if (isNext) {
-		return <Component>{children}</Component>
-	}
-
-	return <Component {...props}>{children}</Component>
+	return (
+		<a target="_blank" key={name} rel="noopener noreferrer" href={to}>
+			{content()}
+		</a>
+	)
 }

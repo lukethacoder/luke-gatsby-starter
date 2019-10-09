@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 
 import { useTrail, animated } from "react-spring"
 
@@ -7,6 +6,7 @@ import { Intro } from "../components/intro"
 import { Banner } from "../components/banner"
 import { Container } from "../components/container"
 import { Columns } from "../components/columns"
+import { Canberra } from "../components/canberra"
 import { Highlight } from "../components/intro/highlight"
 import { SpringFadeUp, TrailFadeUp } from "../utils/animations"
 
@@ -21,7 +21,7 @@ export default () => {
 	})
 	return (
 		<>
-			<Helmet title="Home" />
+			<Canberra title="Home" />
 
 			<Banner>
 				<h2>

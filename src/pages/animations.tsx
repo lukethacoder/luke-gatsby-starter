@@ -1,17 +1,19 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Helmet from "react-helmet"
 
 import { Highlight } from "../components/intro/highlight"
 import { SpringFadeUp, TrailFadeUp } from "../utils/animations"
 import { Container } from "../components/container"
 import { Columns } from "../components/columns"
+import { Canberra } from "../components/canberra"
 import { Banner } from "../components/banner"
 import { colors, breakpoints } from "../styles/variables"
 import { rem } from "../styles/mixins"
 
 export default () => (
 	<>
+		<Canberra title="Animations" />
+
 		<Banner>
 			<h2>
 				<Highlight>react-spring</Highlight> Animations

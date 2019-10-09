@@ -32,6 +32,14 @@ export const StyledFooter = styled.footer`
 					&:hover {
 						color: ${colors.brand.primary};
 					}
+					svg {
+						max-width: 14px;
+						max-height: 14px;
+						min-width: 10px;
+						min-height: 10px;
+						width: 100%;
+						height: 100%;
+					}
 				}
 			}
 		}
