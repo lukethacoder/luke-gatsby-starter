@@ -63,7 +63,7 @@
 		"@types/react-helmet": "^5.0.10",
 		"@types/styled-components": "^4.1.19",
 		"prettier": "^1.18.2",
-		"rimraf": "2.6.3",
+		"rimraf": "3.0.0",
 		"stylelint": "9.10.1",
 		"tslint": "^5.19.0",
 		"tslint-react": "4.1.0"
