@@ -28,7 +28,7 @@
 		"stylelint": "stylelint 'src/**/*.scss' --syntax scss"
 	},
 	"dependencies": {
-		"@emotion/core": "^10.0.17",
+		"@emotion/core": "^10.0.21",
 		"@emotion/styled": "^10.0.17",
 		"@fortawesome/fontawesome-svg-core": "^1.2.22",
 		"@fortawesome/free-brands-svg-icons": "^5.10.1",
@@ -50,15 +50,15 @@
 		"intersection-observer": "^0.7.0",
 		"prismjs": "^1.17.1",
 		"react": "^16.9.0",
-		"react-dom": "^16.9.0",
+		"react-dom": "^16.10.2",
 		"react-helmet": "^5.2.1",
 		"react-spring": "^8.0.27",
 		"typescript": "^3.6.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.0",
-		"@types/node": "^12.7.5",
 		"@types/react": "^16.9.5",
+		"@types/node": "^12.7.12",
 		"@types/react-dom": "^16.9.0",
 		"@types/react-helmet": "^5.0.10",
 		"@types/styled-components": "^4.1.19",

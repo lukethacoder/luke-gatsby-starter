@@ -1,14 +1,13 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Helmet from "react-helmet"
 
 import { Segment } from "../components/segment"
 import { Link } from "../components/link"
+import { Canberra } from "../components/canberra"
 
 export default () => (
 	<>
-		<Helmet title="404 Not Found" />
-
+		<Canberra title="404 Not Found" />
 		<Segment>
 			<ErrorContainer>
 				<img

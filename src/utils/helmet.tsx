@@ -1,15 +1,35 @@
 import { colors } from "../styles/variables"
 
-const title = "Gatsby Starter Luke"
+const title = "luke-starter-gatsby"
 const description =
 	"An opinionated GatsbyJS starter using TypeScript, styled-components, React String and React Spring."
 
-const favicon = require("../assets/images/favicon.png")
-const share = require("../assets/images/share.png")
+const favicon = "static/favicon.png"
+const share = "static/share.png"
 
-export const helmet = {
+export interface IHelmet {
+	title: string
+	titleTemplate: string
+	description: string
+	htmlAttributes?: {
+		lang: string
+	}
+	meta: {
+		name?: string
+		property?: string
+		content: string
+	}[]
+	link: {
+		rel: string
+		type: string
+		href: string
+	}[]
+}
+
+export const base_helmet: IHelmet = {
 	title,
-	titleTemplate: "%s - Luke",
+	description,
+	titleTemplate: "luke-starter-gatsby",
 	htmlAttributes: { lang: "en" },
 	meta: [
 		{ name: "description", content: description },
@@ -33,7 +53,7 @@ export const helmet = {
 
 		{ name: "twitter:title", content: title },
 		{ name: "twitter:card", content: "summary_large_image" },
-		{ name: "twitter:image", content: share },
+		// { name: "twitter:image", content: share },
 		{ name: "twitter:site", content: "@lu_ke____" },
 		{ name: "twitter:creator", content: "@lu_ke____" },
 		{ name: "twitter:description", content: description },

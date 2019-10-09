@@ -10,6 +10,7 @@ interface ILinkProps {
 
 export const Link = ({ name, to, icon }: ILinkProps) => {
 	const isLink = typeof to !== "undefined"
+	console.log("isLink => ", isLink)
 	const isExternal =
 		isLink && /^((https?:)?\/\/|[0-9a-zA-Z]+:)/.test(to || "")
 
@@ -20,13 +21,15 @@ export const Link = ({ name, to, icon }: ILinkProps) => {
 		</>
 	)
 
-	if (isExternal) {
-		return (
-			<a target="_blank" rel="noopener noreferrer" href={to}>
-				{content()}
-			</a>
-		)
+	if (!isExternal) {
+		return <InternalLink to={to}>{content()}</InternalLink>
 	}
 
-	return <InternalLink to={to}>{content()}</InternalLink>
+	return (
+		<a target="_blank" rel="noopener noreferrer" href={to}>
+			{console.log("to to => => => ", to)}
+			{to}
+			{content()}
+		</a>
+	)
 }

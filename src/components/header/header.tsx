@@ -1,7 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { Link as HeaderLink } from "./link"
 import { Link } from "../link"
 import StarterLogo from "../../assets/svg/luke-logo.svg"
 import { HeaderContainer, HeaderMenu } from "./style"
@@ -16,14 +15,20 @@ export const Header = () => (
 			</Link>
 
 			<HeaderMenu>
-				<HeaderLink name="animations" to="/animations" />
-				<HeaderLink name="about" to="/about" />
+				<Link name="animations" to="/animations">
+					animations
+				</Link>
+				<Link name="about" to="/about">
+					about
+				</Link>
 
-				<HeaderLink
+				<Link
 					name="github"
 					to="https://github.com/lukethacoder/luke-gatsby-starter"
-					icon={<FontAwesomeIcon icon={["fab", "github"]} />}
-				/>
+				>
+					<FontAwesomeIcon icon={["fab", "github"]} />
+					Github
+				</Link>
 			</HeaderMenu>
 		</nav>
 	</HeaderContainer>
