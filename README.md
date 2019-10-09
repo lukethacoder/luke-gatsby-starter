@@ -60,7 +60,7 @@ Component files and folders should be named using **kebab-case** and follow the 
 
 ## Font Awesome
 
-Font Awesome is home to more than 5,000 icons and are an easy way to get up and running with icons on your site. The `AppLayout` component is home to the root of the font awesome magic. `import` any icons you wish to use here, and append them to `library.add(...)`.
+Font Awesome is home to more than 5,000 icons and are an easy way to get up and running with icons on your site. The `gatsby-browser.js` file is home to the root of the font awesome magic. `import` any icons you wish to use here, and append them to `library.add(...)`.
 
 ```tsx
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -69,9 +69,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 
 library.add(fab)
 
-export default ({ children }: IAppLayoutProps) => (
-	<FontAwesomeIcon icon={["fab", "github"]} />
-)
+export default () => <FontAwesomeIcon icon={["fab", "github"]} />
 ```
 
 See the [Font Awesome React Docs](https://github.com/FortAwesome/react-fontawesome) for more info.
@@ -101,5 +99,4 @@ Dev mode is enabled by clicking `ctrl + ,`;
 
 ### TODO
 
--   add an about page
 -   example of pulling data from various data sources
