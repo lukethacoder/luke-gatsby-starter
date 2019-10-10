@@ -5753,14 +5753,14 @@ gatsby-plugin-transition-link@^1.13.0:
     react-transition-group "^2.5.0"
     requestanimationframe-timer "^1.0.4"
 
-gatsby-plugin-typescript@^2.1.8:
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.1.11.tgz#cc687c0547b16ea6a22a0eb9ce25609b5cdd0978"
-  integrity sha512-IcUblbq1TF1V5w7AbR0ygVbjotQFh+Z+B+SI5J73OtNFKgehS3cPLEE/6+PMDTmBRYdEJx+ajAMOuIIPn5Jn4w==
+gatsby-plugin-typescript@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.1.12.tgz#c6110005671f1f0730ca4d64380f8f9b905154bb"
+  integrity sha512-BdtMMAzFzwBGo7MSPZti315tptYBzVZiiIno+X/qPapkPDhhQIkSt4zM1R5atXHvUOqlYKNo3uVAhb/4T1O4Ng==
   dependencies:
     "@babel/preset-typescript" "^7.6.0"
-    "@babel/runtime" "^7.6.2"
-    babel-plugin-remove-graphql-queries "^2.7.10"
+    "@babel/runtime" "^7.6.3"
+    babel-plugin-remove-graphql-queries "^2.7.11"
 
 gatsby-react-router-scroll@^2.1.12:
   version "2.1.12"
