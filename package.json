@@ -26,14 +26,14 @@
     "lint": "prettier --write && stylelint --fix"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.21",
+    "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.17",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.5",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.15.34",
+    "gatsby": "^2.17.4",
     "gatsby-image": "^2.2.25",
     "gatsby-plugin-config": "^1.0.7",
     "gatsby-plugin-emotion": "^4.1.10",
@@ -46,28 +46,29 @@
     "gatsby-plugin-sharp": "^2.2.29",
     "gatsby-plugin-transition-link": "^1.13.0",
     "gatsby-plugin-typescript": "^2.1.12",
-    "gatsby-transformer-sharp": "^2.2.21",
+    "gatsby-transformer-sharp": "^2.3.0",
     "intersection-observer": "^0.7.0",
     "prismjs": "^1.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.11.0",
+    "react": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-spring": "^8.0.27",
     "typescript": "^3.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.6.3",
-    "@types/node": "^12.7.12",
-    "@types/react": "^16.9.5",
+    "@types/react-helmet": "^5.0.13",
+    "@types/node": "^12.11.7",
+    "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
-    "@types/react-helmet": "^5.0.10",
     "@types/styled-components": "^4.1.19",
     "gatsby-plugin-sitemap": "^2.2.19",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
     "rimraf": "3.0.0",
-    "stylelint": "9.10.1"
+    "stylelint": "11.1.1"
   },
   "husky": {
     "hooks": {
