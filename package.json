@@ -62,7 +62,7 @@
     "@types/node": "^12.11.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
-    "@types/styled-components": "^4.1.19",
+    "@types/styled-components": "^4.1.20",
     "gatsby-plugin-sitemap": "^2.2.19",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
