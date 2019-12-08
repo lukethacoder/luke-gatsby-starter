@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.17",
+    "@emotion/styled": "^10.0.23",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
@@ -46,7 +46,7 @@
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-transition-link": "^1.13.0",
     "gatsby-plugin-typescript": "^2.1.12",
-    "gatsby-transformer-sharp": "^2.3.0",
+    "gatsby-transformer-sharp": "^2.3.7",
     "intersection-observer": "^0.7.0",
     "prismjs": "^1.17.1",
     "react": "^16.10.2",
