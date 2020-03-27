@@ -46,7 +46,7 @@
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-transition-link": "^1.17.7",
     "gatsby-plugin-typescript": "^2.1.12",
-    "gatsby-transformer-sharp": "^2.3.7",
+    "gatsby-transformer-sharp": "^2.4.3",
     "intersection-observer": "^0.7.0",
     "prismjs": "^1.17.1",
     "react-dom": "^16.11.0",
