@@ -41,7 +41,7 @@
     "gatsby-plugin-manifest": "^2.2.31",
     "gatsby-plugin-nprogress": "^2.1.17",
     "gatsby-plugin-offline": "^3.0.27",
-    "gatsby-plugin-react-helmet": "^3.1.11",
+    "gatsby-plugin-react-helmet": "^3.3.5",
     "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-transition-link": "^1.17.7",
