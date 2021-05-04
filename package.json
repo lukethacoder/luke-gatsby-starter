@@ -33,7 +33,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.18.7",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-config": "^1.0.7",
     "gatsby-plugin-emotion": "^4.1.16",
